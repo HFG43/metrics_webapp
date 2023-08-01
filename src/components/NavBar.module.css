@@ -7,13 +7,13 @@
   font-family: 'Lato', sans-serif;
  
 }
-
+/* 
 html {
   cursor: url('../Assets/pointer.svg'), auto;
-}
+} */
 
 .navbar {
-  background-color: #4c88f0;
+  background-color: #547abd;
   display: flex;
   align-items: center;
   color: #fff;
