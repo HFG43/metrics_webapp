@@ -1,16 +1,21 @@
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import styles from './NavBar.module.css';
+import micIcon from '../Assets/micIcon.svg';
+import configIcon from '../Assets/configIcon.svg';
 
 const NavBar = () => (
   <>
-    <nav>
+    <nav className={styles.navbar}>
       <div>
-        <span>&lt;span&gt;</span>
+        <span>
+          <Link to="/home">&lt;</Link>
+        </span>
         <span>2022</span>
       </div>
       <p />
       <div>
-        <img src="#" alt="microphone icon" />
-        <img src="#" alt="configuration icon" />
+        <img className={styles.navbar_mic_icon} src={micIcon} alt="microphone icon" />
+        <img className={styles.navbar_config_icon} src={configIcon} alt="configuration icon" />
       </div>
     </nav>
   </>

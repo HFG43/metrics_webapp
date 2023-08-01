@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import './App.css';
 import { getMarketData } from './Redux/MarketSlice/MarketSlice';
@@ -16,11 +16,13 @@ function App() {
 
   return (
     <>
-      <NavBar />
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/companies-info" element={<CompanyDisplay />} />
-      </Routes>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/company" element={<CompanyDisplay />} />
+        </Routes>
+      </Router>
     </>
   );
 }

@@ -1,6 +1,10 @@
+import CompaniesListDisplay from './CompaniesListDisplay';
+import MarketView from './MarketView';
+
 const Home = () => (
   <>
-    <div>HOME</div>
+    <MarketView />
+    <CompaniesListDisplay />
   </>
 );
 export default Home;
