@@ -2,7 +2,7 @@ import CompaniesList from './CompaniesList';
 
 const CompaniesListDisplay = () => (
   <>
-    {console.log(CompaniesList)}
+    <CompaniesList />
     <div>List Display</div>
   </>
 );
