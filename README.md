@@ -1,5 +1,5 @@
 <div style="text-align: center; font-size:25px">
-<h1> Space Traveler's Hub </h1>
+<h1> S&P 500 Stock Data </h1>
 </div>
 
 
@@ -28,8 +28,8 @@
 - [🔎 Learn more](#learn-more)
 
 
-# 📖 "Space Traveler's Hub" <a name="about-project"></a>
-Web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+# 📖 "S&P 500 Stock Data" <a name="about-project"></a>
+S&P 500 Stock Data is an app built with React and Redux, that will delivery, price, average price and other key indicatores for the most important companies that operate in the S&P 500 market.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -106,7 +106,7 @@ Clone this repository to your desired folder:
 - Clone this repo on your local device you need to open Git Bash and paste the link with the command
 ```sh
   cd my-folder-name
-  $ git clone https://github.com/AndreaM2429/Space_Travelers_Hub
+  $ git clone https://github.com/HFG43/metrics_webapp
 ```
 
 
