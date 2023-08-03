@@ -28,11 +28,11 @@ const MarketView = () => {
         <div className={styles.market_logo}>
           <h2>STANDARD & POOR&rsquo;S</h2>
           <br />
-          <span>Best Performing Companies</span>
+          <span>Best Performing Companies Prices</span>
         </div>
         <div className={styles.market_data}>
           <h2>S&P 500</h2>
-          <span>11111</span>
+          <span>{marketInfo[0].price}</span>
         </div>
       </section>
     </>

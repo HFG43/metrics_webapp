@@ -4,8 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
- 
+  font-family: 'Lato', sans-serif; 
 }
 /* 
 html {
@@ -13,9 +12,10 @@ html {
 } */
 
 .navbar {
-  background-color: #547abd;
+  background-color: #ec4c8a;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #fff;
   padding: 12px 6px;  
 }
@@ -36,4 +36,8 @@ html {
 .navbar_config_icon {
   height: 1rem;
   width: auto;
+}
+
+.navbar_config_icon {
+  margin-left: 1rem;
 }

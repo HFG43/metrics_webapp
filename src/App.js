@@ -11,7 +11,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="/company" element={<CompanyDisplay />} />
+          <Route path="/company/:symbol" element={<CompanyDisplay />} />
         </Routes>
       </Router>
     </>

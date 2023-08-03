@@ -1,6 +1,10 @@
+import Company from './Company';
+import CompanyHeader from './CompanyHeader';
+
 const CompanyDisplay = () => (
   <>
-    <div>Company Display</div>
+    <CompanyHeader />
+    <Company />
   </>
 );
 export default CompanyDisplay;

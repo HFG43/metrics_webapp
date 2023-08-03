@@ -2,11 +2,12 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const url = 'https://financialmodelingprep.com/api/v3/quote/AAPL,MSFT,AMZN,GOOGL,FB,TSLA,BRK.B,JNJ,JPM,V,PG,MA,UNH,NVDA,HD,PYPL,ADBE,CRM,NFLX,BAC,INTC,CSCO,XOM,CMCSA,CVX,PEP,PFE,ABT,ABBV,LLY,NKE,COST,DHR,NEE,UNP,HON,AMD,C,ACN,LIN,MRK,ORCL,WMT,UPS,MCD,BMY,AMGN,PM,TMO,DIS,LMT,MO,GD,MDT,BLK,BKNG,GS,AXP,LRCX,CHTR,RTX,SPGI,BDX,CCI,NOC,ISRG,PLD,ANTM,SBUX,CI,SCHW,MCO,D,ADP,ILMN,ZTS,REGN,SYK,TJX,BIIB,ADSK,VRTX,CME,NOW,IBM,HCA,SO,FIS,ATVI,CL,GS,ANTM,MS,ZTS?&apikey=';
-const apiKey = '66e98217e2416f23a2ebb8309751840';
+const apiKey = '66e98217e2416f23a2ebb8309751840a';
 
 const initialState = {
-  companies: [{ company_symbol: 'aaa', company_name: 'aaa', company_price: 10 }],
+  companies: [],
   status: 'idle',
+  error: null,
 };
 
 export const getCompaniesData = createAsyncThunk(
