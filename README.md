@@ -29,7 +29,10 @@
 
 
 # 📖 "S&P 500 Stock Data" <a name="about-project"></a>
-S&P 500 Stock Data is an app built with React and Redux, that will delivery, price, average price and other key indicatores for the most important companies that operate in the S&P 500 market.
+S&P 500 Stock Data is an SPA built with React and Redux, that will delivery, price, average price and other key numeric indicatores for the most important companies that operate in the S&P 500 market.
+
+Find here video that shows the project details and functionality:
+[Project Video](https://www.loom.com/share/6883e3792432411ab73ca1b1abc411fd?sid=95a16334-332a-490c-b3dc-d066f760d6c5)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -65,7 +68,7 @@ S&P 500 Stock Data is an app built with React and Redux, that will delivery, pri
 <details>
   <summary>API</summary>
   <ul>
-      <li>This project use <a href="https://docs.spacexdata.com/">SpaceXdata API</a> for rockets & Missions.</li>
+      <li>This project use <a href="https://site.financialmodelingprep.com/developer/docs/">Financial Modeling Prep API</a> for Market and Companies</li>
     </ul>
 </details>
 
@@ -126,7 +129,9 @@ npm start
 
 ### Usage
 
-Now you are able to modify the files in the `space_travelers_hub/src`, but be careful just modify them, the rest are for the funcionality of the app so **NOT MODIFY THEM**.
+To run the project, execute the following command:
+
+In the command line: run `npm start`
 
 
 ### Run tests
@@ -210,7 +215,7 @@ To deploy this project by someone who isn't the owner is prohibit.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Deploy the project**
+- [ ] **Add graphs and non numeric KPIs**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
