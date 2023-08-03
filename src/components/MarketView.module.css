@@ -1,4 +1,7 @@
 .market_container {
+  position: fixed;
+  width: 100vw;
+  top: 49px;
   background-color: #fc5193;
   display: flex;
   color: #fff;
@@ -8,7 +11,7 @@
 .market_logo {
   width: 50%;
   color: #9e184c;
-  font-weight: 900;  
+  font-weight: 900;
   padding-left: 12px;
 }
 

@@ -23,12 +23,12 @@ function Company() {
         {companies.map((company) => {
           if (company.symbol === symbol) {
             return (
-              <>
+              <div key={company.symbol} className={styles.company_container}>
                 <div className={styles.company_details_header}>
                   Finantial details:&nbsp;&nbsp;&nbsp;
                   {company.name}
                 </div>
-                <ul className={styles.company_details} key={company.symbol}>
+                <ul className={styles.company_details}>
                   <li>
                     <h3>Price</h3>
                     <div className={styles.arrow_value_container}>
@@ -79,7 +79,7 @@ function Company() {
                     </div>
                   </li>
                 </ul>
-              </>
+              </div>
             );
           }
           return null;

@@ -4,12 +4,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif; 
+  font-family: 'Lato', sans-serif;
 }
-/* 
-html {
-  cursor: url('../Assets/pointer.svg'), auto;
-} */
+
+.navbar_position {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
 
 .navbar {
   background-color: #ec4c8a;
@@ -17,7 +20,7 @@ html {
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  padding: 12px 6px;  
+  padding: 12px 6px;
 }
 
 .navbar div {
