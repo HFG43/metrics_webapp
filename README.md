@@ -76,6 +76,7 @@ Find here video that shows the project details and functionality:
 ### Key Features <a name="key-features"></a>
 
 - **SPA**
+- **Mobile Desing**
 - **Simple interface**
 - **React App**
 - **React Router**
@@ -197,7 +198,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ### Deployment
 
-To deploy this project by someone who isn't the owner is prohibit.
+You can find a deployed version of my proyect in the following Render link:
+
+[Deployment Link](https://sp500-stockmarket.onrender.com/company/AAPL)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -215,7 +218,8 @@ To deploy this project by someone who isn't the owner is prohibit.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add graphs and non numeric KPIs**
+- **Add graphs and non numeric KPIs**
+- **Desktop Design**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -240,6 +244,10 @@ If you like this project you could clone the repo and work with it or do the cha
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse for provided the necessary resources for this project.
+
+I will also like to acknowledge Nelson Sakwa for the original design idea. You can take a look at his full design in the following link:
+
+[Desing](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
