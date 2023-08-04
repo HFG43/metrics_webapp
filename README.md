@@ -1,4 +1,7 @@
 <div style="text-align: center; font-size:25px">
+<img src="../metrics_webapp/src/Assets/Market.png" alt="logo" width="140"  height="auto" />
+<br/>
+
 <h1> S&P 500 Stock Data </h1>
 </div>
 
@@ -200,7 +203,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 You can find a deployed version of my proyect in the following Render link:
 
-[Deployment Link](https://sp500-stockmarket.onrender.com/company/AAPL)
+[Deployment Link](https://sp500-stockmarket.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
