@@ -1,5 +1,5 @@
 <div style="text-align: center; font-size:25px">
-<img src="../metrics_webapp/src/Assets/Market.png" alt="logo" width="140"  height="auto" />
+<img src="./src/Assets/Market.png" alt="App Screenshot" width="140"  height="auto" />
 <br/>
 
 <h1> S&P 500 Stock Data </h1>
