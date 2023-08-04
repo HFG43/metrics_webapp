@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom/extend-expect';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
+import * as redux from 'react-redux';
 import CompaniesList from '../components/CompaniesList';
 import { getCompaniesData } from '../Redux/CompaniesSlice/CompaniesSlice';
 
