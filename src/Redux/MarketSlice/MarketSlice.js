@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const url = 'https://financialmodelingprep.com/api/v3/quote/%5eGSPC?apikey=';
-const apiKey = '66e98217e2416f23a2ebb8309751840a';
+const apiKey = '66e98217e2416f23a2ebb8309751840';
 
 const initialState = {
   marketData: [],
@@ -42,6 +42,5 @@ const marketSlice = createSlice({
   },
 });
 
-export const { updateMarketPrice } = marketSlice.actions;
-
 export default marketSlice.reducer;
+// export const { updateMarketPrice } = marketSlice.actions;

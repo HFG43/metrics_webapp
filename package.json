@@ -4,8 +4,6 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "react": "^18.2.0",
@@ -14,6 +12,7 @@
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
     "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -45,6 +44,8 @@
     "@babel/eslint-parser": "^7.22.9",
     "@babel/plugin-syntax-jsx": "^7.22.5",
     "@babel/preset-react": "^7.22.5",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.28.0",
@@ -52,9 +53,15 @@
     "eslint-plugin-react": "^7.33.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "jest": "^27.5.1",
+    "redux-mock-store": "^1.5.4",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "axios": "axios/dist/node/axios.cjs"
+    }
   }
 }
