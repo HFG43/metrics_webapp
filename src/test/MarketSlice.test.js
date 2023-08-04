@@ -1,35 +1,33 @@
-import '@testing-library/jest-dom/extend-expect';
-import axios from 'axios';
+import React from 'react';
+import { render } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { getMarketData } from '../Redux/MarketSlice/MarketSlice';
+import Company from '../components/Company';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
-describe('Market Slice', () => {
-  it('should update the state to "succeded" after successful getMarketData', async () => {
-    const sp500Mock = [
-      {
-        symbol: '^GSPC',
-        name: 'S&P 500',
-        price: 4438.73,
-      },
-    ];
-
-    jest.spyOn(axios, 'get').mockResolvedValue({ data: sp500Mock });
-
+describe('Company', () => {
+  test('should dispatch getCompaniesData when status is idle', () => {
     const store = mockStore({
-      market: {
-        marketData: [],
+      companies: {
+        companies: [],
         status: 'idle',
         error: null,
       },
     });
 
-    store.dispatch(getMarketData());
+    render(
+      <Provider store={store}>
+        <MemoryRouter initialEntries={['/AAPL']}>
+          <Company />
+        </MemoryRouter>
+      </Provider>,
+    );
 
-    const state = store.getState().market;
-    expect(state.status).toEqual('succeded');
+    const actions = store.getActions();
+    expect(actions).toContainEqual(expect.objectContaining({ type: 'statistics/getCompaniesData/pending' }));
   });
 });
