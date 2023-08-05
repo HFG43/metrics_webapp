@@ -35,6 +35,9 @@ const companiesSlice = createSlice({
       state.companiesFiltered = state.companies.filter((company) => company.name.toLowerCase()
         .includes(action.payload.toLowerCase()));
     },
+    clearFilter: (state) => {
+      state.companiesFiltered = state.companies;
+    },
   },
   extraReducers(builder) {
     builder
@@ -53,5 +56,5 @@ const companiesSlice = createSlice({
   },
 });
 
-export const { filterCompanies } = companiesSlice.actions;
+export const { filterCompanies, clearFilter } = companiesSlice.actions;
 export default companiesSlice.reducer;

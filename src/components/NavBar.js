@@ -1,5 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { clearFilter } from '../Redux/CompaniesSlice/CompaniesSlice';
 import styles from './NavBar.module.css';
 import micIcon from '../Assets/micIcon.svg';
 import configIcon from '../Assets/configIcon.svg';
@@ -8,6 +10,11 @@ const NavBar = () => {
   const location = useLocation();
   const home = location.pathname === '/home';
   const navCentralText = home ? 'Market View' : 'Company View';
+  const dispatch = useDispatch();
+
+  const handleClear = () => {
+    dispatch(clearFilter());
+  };
 
   return (
     <>
@@ -15,7 +22,7 @@ const NavBar = () => {
         <nav className={styles.navbar}>
           <div>
             <span>
-              <Link to="/home">&lt;</Link>
+              <Link to="/home" onClick={handleClear}>&lt;</Link>
             </span>
             <span>2022</span>
           </div>
