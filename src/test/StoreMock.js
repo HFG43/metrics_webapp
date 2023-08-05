@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import { configureStore } from '@reduxjs/toolkit';
-import CompaniesReducer from '../Redux/CompaniesSlice/CompaniesSlice.js';
-import MarketReducer from '../Redux/MarketSlice/MarketSlice.js';
+import CompaniesReducer from '../Redux/CompaniesSlice/CompaniesSlice';
+import MarketReducer from '../redux/MarketSlice/MarketSlice';
 
 const mockCompaniesData = [
   {
