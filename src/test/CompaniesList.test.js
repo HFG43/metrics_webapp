@@ -5,7 +5,7 @@ import * as redux from 'react-redux';
 import CompaniesList from '../components/CompaniesList';
 import { getCompaniesData } from '../Redux/CompaniesSlice/CompaniesSlice';
 
-test('should call getCompaniesData when status is idle and companies array is empty', () => {
+test('Should call getCompaniesData when status is idle', () => {
   const dispatch = jest.fn();
   const useSelectorMock = jest.spyOn(redux, 'useSelector');
   useSelectorMock.mockReturnValueOnce([]);

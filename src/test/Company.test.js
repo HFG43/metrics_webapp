@@ -30,17 +30,3 @@ describe('Company', () => {
     expect(getCompaniesData).toHaveBeenCalled();
   });
 });
-
-// companies: [
-//   {
-//     symbol: 'AAPL',
-//     name: 'Apple Inc.',
-//     price: 148.48,
-//     dayLow: 147.22,
-//     dayHigh: 148.5,
-//     priceAvg50: 146.5,
-//     open: 148.11,
-//     previousClose: 148.48,
-//     volume: 56729590,
-//   },
-// ]

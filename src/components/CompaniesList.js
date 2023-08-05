@@ -24,7 +24,7 @@ function CompaniesList() {
   return (
     <>
       <div className={styles.form}>
-        <input onChange={handleSearch} type="text" placeholder="Search for your coampany" id="search" pattern="^[A-Za-z0-9]+([ ]?[A-Za-z0-9]+)?$" />
+        <input onChange={handleSearch} type="text" placeholder="Search for your company" id="search" pattern="^[A-Za-z0-9]+([ ]?[A-Za-z0-9]+)?$" />
       </div>
       <div className={styles.companies_list_container}>
         {companies.map((company, index) => (
