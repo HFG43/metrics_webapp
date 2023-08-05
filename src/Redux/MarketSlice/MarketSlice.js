@@ -42,6 +42,4 @@ const marketSlice = createSlice({
   },
 });
 
-export const { updateMarketPrice } = marketSlice.actions;
-
 export default marketSlice.reducer;
