@@ -1,0 +1,55 @@
+html {
+  background-color: #de4883;
+}
+
+.company_details {
+  color: #fff;
+}
+
+.company_container {
+  margin-top: 137.38px;
+}
+
+.company_details_header {
+  font-size: 1rem;
+  background-color: #ff5395;
+  color: #fff;
+  font-weight: 300;
+  padding: 2px 0 2px 6px;
+}
+
+.company_details li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company_details li:nth-child(odd) {
+  background-color: #cf4278;
+}
+
+.company_details li:nth-child(even) {
+  background-color: #de4883;
+}
+
+.company_details li h3 {
+  padding: 1.5rem 6px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.company_details li span {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.arrow_value_container {
+  padding-right: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  width: 20px;
+  margin-left: 1rem;
+}

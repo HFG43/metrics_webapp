@@ -1,0 +1,10 @@
+.company_price_header {
+  font-size: 0.85rem;
+  background-color: #ff5395;
+  color: #fff;
+  font-weight: 300;
+  padding: 2px 0 2px 6px;
+  position: fixed;
+  top: 186.37px;
+  width: 100vw;
+}

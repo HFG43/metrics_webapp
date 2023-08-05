@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar_position {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  background-color: #ec4c8a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 12px 6px;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar span a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding-right: 3px;
+}
+
+.navbar_mic_icon,
+.navbar_config_icon {
+  height: 1rem;
+  width: auto;
+}
+
+.navbar_config_icon {
+  margin-left: 1rem;
+}

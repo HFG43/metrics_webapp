@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompaniesList Should render the Companies correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="form"
+      >
+        <input
+          id="search"
+          pattern="^[A-Za-z0-9]+([ ]?[A-Za-z0-9]+)?$"
+          placeholder="Search for your company"
+          type="text"
+        />
+      </div>
+      <div
+        class="companies_list_container"
+      >
+        <a
+          href="/company/Test"
+        >
+          <article
+            class="obsc"
+          >
+            <div>
+              <div
+                class="name_arrow_container"
+              >
+                <img
+                  alt="Arrow icon"
+                  class="arrow"
+                  src="arrow_next.svg"
+                />
+                <div
+                  class="name_container"
+                >
+                  <span
+                    class="company_name"
+                  >
+                    Company Test
+                  </span>
+                </div>
+              </div>
+              <div
+                class="symbol_price_container"
+              >
+                <p>
+                  Test
+                </p>
+                <span>
+                  181.99
+                </span>
+              </div>
+            </div>
+          </article>
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="form"
+    >
+      <input
+        id="search"
+        pattern="^[A-Za-z0-9]+([ ]?[A-Za-z0-9]+)?$"
+        placeholder="Search for your company"
+        type="text"
+      />
+    </div>
+    <div
+      class="companies_list_container"
+    >
+      <a
+        href="/company/Test"
+      >
+        <article
+          class="obsc"
+        >
+          <div>
+            <div
+              class="name_arrow_container"
+            >
+              <img
+                alt="Arrow icon"
+                class="arrow"
+                src="arrow_next.svg"
+              />
+              <div
+                class="name_container"
+              >
+                <span
+                  class="company_name"
+                >
+                  Company Test
+                </span>
+              </div>
+            </div>
+            <div
+              class="symbol_price_container"
+            >
+              <p>
+                Test
+              </p>
+              <span>
+                181.99
+              </span>
+            </div>
+          </div>
+        </article>
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

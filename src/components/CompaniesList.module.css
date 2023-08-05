@@ -1,0 +1,82 @@
+.form {
+  background-color: #8c073a;
+  margin-top: 206px;
+  padding: 6px;
+}
+
+input {
+  border: #ff5395;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 4px;
+}
+
+.companies_list_container {
+  color: #fff;
+}
+
+.lig {
+  width: 50%;
+  background-color: #de4883;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.obsc {
+  width: 50%;
+  background-color: #cf4278;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.lig:hover,
+.obsc:hover {
+  cursor: url('../Assets/pointer.svg'), auto;
+}
+
+.name_container {
+  padding-left: 12px;
+  padding-right: 6px;
+}
+
+.company_name {
+  color: #8c073a;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.name_arrow_container {
+  height: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow {
+  width: 16px;
+  align-self: flex-end;
+  margin-top: 3px;
+  margin-right: 8px;
+}
+
+.symbol_price_container {
+  display: flex;
+  height: 4rem;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 8px;
+}
+
+.symbol_price_container p {
+  padding-top: 8px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.symbol_price_container span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}

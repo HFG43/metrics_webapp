@@ -1,0 +1,34 @@
+.market_container {
+  position: fixed;
+  width: 100vw;
+  top: 49px;
+  background-color: #fc5193;
+  display: flex;
+  color: #fff;
+  padding: 0.7rem 0;
+}
+
+.market_logo {
+  width: 50%;
+  color: #9e184c;
+  font-weight: 900;
+  padding-left: 12px;
+}
+
+.market_data {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12px;
+}
+
+.market_data h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.market_logo h2 {
+  font-size: 1.5rem;
+}
