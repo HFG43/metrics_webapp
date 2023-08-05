@@ -1,16 +1,19 @@
 import '@testing-library/jest-dom/extend-expect';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import * as redux from 'react-redux';
+import { Provider } from 'react-redux';
+import store from './StoreMock';
 import CompaniesList from '../components/CompaniesList';
-import { getCompaniesData } from '../Redux/CompaniesSlice/CompaniesSlice';
 
-test('Should call getCompaniesData when status is idle', () => {
-  const dispatch = jest.fn();
-  const useSelectorMock = jest.spyOn(redux, 'useSelector');
-  useSelectorMock.mockReturnValueOnce([]);
-  useSelectorMock.mockReturnValueOnce('idle');
-  render(<CompaniesList />, { wrapper: MemoryRouter });
-  expect(dispatch).toHaveBeenCalledTimes(1);
-  expect(dispatch).toHaveBeenCalledWith(getCompaniesData());
+describe('CompaniesList', () => {
+  test('Should render the Companies correctly', () => {
+    const tree = render(
+      <MemoryRouter initialEntries={['/home']}>
+        <Provider store={store}>
+          <CompaniesList />
+        </Provider>
+      </MemoryRouter>,
+    );
+    expect(tree).toMatchSnapshot();
+  });
 });

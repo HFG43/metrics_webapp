@@ -3,14 +3,14 @@ import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './StoreMock';
-import CompanyDisplay from '../components/CompanyDisplay';
+import CompanyHeader from '../components/CompanyHeader';
 
-describe('CompanyDisplay', () => {
-  test('The CompanyDisplay renders correctly and loads Company & Company Header', () => {
+describe('CompanyHeader', () => {
+  test('Company Header should render corrrectly', () => {
     const tree = render(
       <MemoryRouter initialEntries={['/company/Test']}>
         <Provider store={store}>
-          <CompanyDisplay />
+          <CompanyHeader />
         </Provider>
       </MemoryRouter>,
     );

@@ -1,5 +1,7 @@
 import '@testing-library/jest-dom';
 import { configureStore } from '@reduxjs/toolkit';
+import CompaniesReducer from '../redux/CompaniesSlice/CompaniesSlice';
+import MarketReducer from '../redux/MarketSlice/MarketSlice';
 
 const mockCompaniesData = [
   {
@@ -55,7 +57,7 @@ const mockMarketData = [
   },
 ];
 
-const store = configureStore({
+const initialStates = {
   companies: {
     companies: mockCompaniesData,
     companiesFiltered: mockCompaniesData,
@@ -67,6 +69,13 @@ const store = configureStore({
     status: 'idle',
     error: null,
   },
+};
+const store = configureStore({
+  reducer: {
+    companies: CompaniesReducer,
+    market: MarketReducer,
+  },
+  preloadedState: initialStates,
 });
 
 export default store;

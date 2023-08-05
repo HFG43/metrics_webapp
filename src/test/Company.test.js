@@ -2,31 +2,19 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import configureStore from 'redux-mock-store';
 import Company from '../components/Company';
-import { getCompaniesData } from '../Redux/CompaniesSlice/CompaniesSlice';
-
-const mockStore = configureStore();
+import store from './StoreMock';
 
 describe('Company', () => {
-  test('should dispatch getCompaniesData when status is idle', () => {
-    const initialState = {
-      companies: {
-        companies: [],
-        status: 'idle',
-      },
-    };
-
-    const store = mockStore(initialState);
-
-    render(
+  test('should render Company correctly', () => {
+    const companyRender = render(
       <Provider store={store}>
-        <MemoryRouter initialEntries={['/AAPL']}>
+        <MemoryRouter initialEntries={['/Test']}>
           <Company />
         </MemoryRouter>
       </Provider>,
     );
 
-    expect(getCompaniesData).toHaveBeenCalled();
+    expect(companyRender).toMatchSnapshot();
   });
 });
